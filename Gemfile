@@ -64,3 +64,6 @@ group :development do
   # gem "spring"
 end
 
+gem 'elasticsearch', '~> 8.8'
+gem 'elasticsearch-model', '~> 0.1.8'
+gem 'elasticsearch-rails', '~> 7.2', '>= 7.2.1'
