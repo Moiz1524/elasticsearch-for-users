@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+10.times do |i|
+  puts "*** Creating Batch##{i + 1} of 1000 users ***"; puts
+  
+  1_000.times do
+    User.create!(
+      first_name: Faker::Name.unique.first_name,
+      last_name: Faker::Name.unique.last_name,
+      username: Faker::Internet.unique.username,
+      email: Faker::Internet.unique.email,
+      phone_no: Faker::PhoneNumber.unique.phone_number,
+      location: Faker::Address.unique.full_address
+    )
+  end
+
+  puts "*** Successfully processed Batch##{i + 1}. Users count: #{User.count} ***"; puts
+end
