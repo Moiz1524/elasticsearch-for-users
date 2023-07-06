@@ -11,12 +11,12 @@
   
   1_000.times do
     User.create!(
-      first_name: Faker::Name.unique.first_name,
-      last_name: Faker::Name.unique.last_name,
-      username: Faker::Internet.unique.username,
-      email: Faker::Internet.unique.email,
-      phone_no: Faker::PhoneNumber.unique.phone_number,
-      location: Faker::Address.unique.full_address
+      first_name: Faker::Name.first_name,
+      last_name: Faker::Name.last_name,
+      username: Faker::Internet.username,
+      email: Faker::Internet.email,
+      phone_no: Faker::PhoneNumber.phone_number,
+      location: Faker::Address.full_address
     )
   end
 
