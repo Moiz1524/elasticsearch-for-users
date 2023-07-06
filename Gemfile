@@ -56,6 +56,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem "faker"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -64,6 +65,6 @@ group :development do
   # gem "spring"
 end
 
-gem 'elasticsearch', '~> 8.8'
-gem 'elasticsearch-model', '~> 0.1.8'
-gem 'elasticsearch-rails', '~> 7.2', '>= 7.2.1'
+gem 'elasticsearch', '~> 7.13', '>= 7.13.1'
+gem 'elasticsearch-model', git: "https://github.com/elasticsearch/elasticsearch-rails.git", branch: "main"
+gem 'elasticsearch-rails', git: "https://github.com/elasticsearch/elasticsearch-rails.git", branch: "main"
