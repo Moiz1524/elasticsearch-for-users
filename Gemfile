@@ -68,3 +68,5 @@ end
 gem 'elasticsearch', '~> 7.13', '>= 7.13.1'
 gem 'elasticsearch-model', git: "https://github.com/elasticsearch/elasticsearch-rails.git", branch: "main"
 gem 'elasticsearch-rails', git: "https://github.com/elasticsearch/elasticsearch-rails.git", branch: "main"
+
+gem 'pagy', '~> 6.0' # omit patch digit

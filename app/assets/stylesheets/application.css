@@ -13,3 +13,86 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  width: 200px;
+}
+
+input[type="submit"] {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+input[type="submit"]:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 5px #007bff; /* Add a box shadow on focus */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f5f5f5;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination a {
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  color: #007bff;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+  }
+}
